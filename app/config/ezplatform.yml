@@ -5,6 +5,7 @@ imports:
 ezdesign:
     design_list:
         demo: [demo, standard]
+        alternative_demo: [other_theme, demo, standard]
 
 ezpublish:
     # Repositories configuration, setup default repository to support solr if enabled
@@ -20,9 +21,9 @@ ezpublish:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site]
+        list: [site, alternative_site]
         groups:
-            site_group: [site]
+            site_group: [site, alternative_site]
         default_siteaccess: site
         match:
             URIElement: 1
@@ -42,3 +43,5 @@ ezpublish:
             languages: [eng-GB]
         site:
             design: demo
+        alternative_site:
+            design: alternative_demo
