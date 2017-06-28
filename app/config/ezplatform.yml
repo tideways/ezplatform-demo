@@ -2,6 +2,10 @@ imports:
     - { resource: image_variations.yml }
     - { resource: views.yml }
 
+ezdesign:
+    design_list:
+        demo: [demo, standard]
+
 ezpublish:
     # Repositories configuration, setup default repository to support solr if enabled
     repositories:
@@ -36,3 +40,5 @@ ezpublish:
             # so removing eng-GB from this list may lead to errors or content not being shown, unless you change
             # all eng-GB data to other locales first.
             languages: [eng-GB]
+        site:
+            design: demo
