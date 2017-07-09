@@ -21,6 +21,9 @@
 .php~
 /bin/behat
 /bin/phpunit
+/bin/doctrine-dbal
+/bin/php-parse
+/bin/security-checker
 /app/check.php
 /app/SymfonyRequirements.php
 /app/cache/
@@ -40,6 +43,7 @@
 /web/share
 /web/var
 /web/.htaccess
+/web/fonts
 composer.phar
 composer.lock
 .buildpath
